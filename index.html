@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Untuk Ibu ❤️</title>
+
+<style>
+body {
+  text-align:center;
+  font-family: Arial;
+  background: linear-gradient(to right,#ff9a9e,#fad0c4);
+  color:white;
+}
+
+button{
+  padding:12px 20px;
+  margin:10px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+  background:white;
+  color:#ff6b81;
+}
+
+button:hover{
+  background:#ff6b81;
+  color:white;
+}
+
+.box{
+  background:rgba(255,255,255,0.2);
+  padding:20px;
+  border-radius:15px;
+  display:inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>🎮 Game Cinta Untuk Ibu 💐</h2>
+
+<div id="game">
+<p>Level 1️⃣<br>Siapa yang selalu bangun paling pagi?</p>
+<button onclick="level2()">Ibu ❤️</button>
+<button onclick="level2()">Superhero 🦸‍♀️</button>
+</div>
+
+<h3 id="hasil"></h3>
+</div>
+
+<script>
+
+function level2(){
+document.getElementById("game").innerHTML=`
+<p>Level 2️⃣<br>Siapa yang selalu khawatir kalau aku sakit?</p>
+<button onclick="level3()">Ibu 😭</button>
+<button onclick="level3()">Malaikat ❤️</button>
+`;
+}
+
+function level3(){
+document.getElementById("game").innerHTML=`
+<p>Level 3️⃣<br>Siapa yang paling sabar menghadapi aku?</p>
+<button onclick="level4()">Ibu 💕</button>
+<button onclick="level4()">Tetap Ibu ❤️</button>
+`;
+}
+
+function level4(){
+document.getElementById("game").innerHTML=`
+<p>Level Terakhir ⭐<br>Apa pesan untuk ibu?</p>
+<button onclick="finish()">Klik Untuk Lihat ❤️</button>
+`;
+}
+
+function finish(){
+document.getElementById("game").innerHTML="";
+document.getElementById("hasil").innerHTML=
+"🎉 SELAMAT IBU 🎉<br><br>"+
+"Terima kasih atas semua kasih sayang ibu.<br>"+
+"Aku mungkin belum bisa membalas semuanya,<br>"+
+"Tapi aku selalu sayang ibu selamanya ❤️💐";
+}
+
+</script>
+
+</body>
+</html>
